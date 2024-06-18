@@ -39,6 +39,10 @@ const config: Configuration = {
         test: /\.html$/i,
         loader: 'html-loader',
       },
+      {
+        test: /\.txt$/i,
+        use: 'raw-loader',
+      },
     ],
   },
   resolve: {
